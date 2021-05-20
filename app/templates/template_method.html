@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %} Шаблонный метод {% endblock %}
+{% block content %}
+    <div class="bg-light p-5 rounded">
+        <h1>Шаблонный метод</h1>
+        <h2>Описание</h2>
+        <ul>В зависимости от учебного заведения получаем статистику поступивших и отсеяных человек. Учебные заведения:
+            <li>School</li>
+            <li>University</li>
+        </ul>
+        <h2>Результаты</h2>
+        <p class="lead">{{ template_method1 | safe }}</p>
+        <p class="lead">{{ template_method2 | safe }}</p>
+    </div>
+{% endblock %}
